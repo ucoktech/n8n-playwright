@@ -1,6 +1,6 @@
 # Microsoft'un resmi Playwright image'ını base olarak kullan
 # Bu image zaten Playwright, Chromium ve tüm bağımlılıkları içerir
-FROM mcr.microsoft.com/playwright:v1.40.0-noble
+FROM mcr.microsoft.com/playwright:latest
 
 # Root kullanıcısına geç
 USER root
@@ -26,4 +26,5 @@ EXPOSE 5678
 
 # n8n'i başlat
 CMD ["n8n", "start"]
+
 
